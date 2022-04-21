@@ -1,0 +1,47 @@
+/* Navigation Partial */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    display: flex;
+
+    a {
+        @include fontSize(36);
+        font-weight: $fw-extralight;
+        color: $clr-blue;
+
+        &:hover,
+        &:focus {
+            color: $clr-white;
+        }
+    }
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin: 0 0 0 3rem;
+    }
+
+    a {
+        @include fontSize(20);
+        cursor: pointer;
+        
+        &:hover,
+        &:focus {
+            color: $clr-blue;
+        }
+    }
+}

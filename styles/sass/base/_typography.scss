@@ -1,0 +1,35 @@
+/* Typography Partial */
+
+html {
+    font-size: 125%;
+    font-family: $ff-primary;
+    font-weight: $fw-bold;
+}
+
+h1 {
+    @include fontSize(128);
+    
+}
+
+h2 {
+    @include fontSize(40);
+    font-weight: $fw-regular;
+}
+
+h3 {
+    @include fontSize(64);
+}
+
+h4 {
+    @include fontSize(36);
+}
+
+p {
+    @include fontSize(24);
+    font-weight: $fw-regular;
+}
+
+a {
+    @include fontSize(24);
+}
+

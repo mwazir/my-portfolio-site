@@ -1,0 +1,30 @@
+/* About Section Partial */
+
+.about-section {
+    height: 100vh;
+}
+
+.section-container {
+    display: flex;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 0 0 3rem;
+    }
+
+    p {
+        margin: 1rem 0 0 0;
+    }
+}
