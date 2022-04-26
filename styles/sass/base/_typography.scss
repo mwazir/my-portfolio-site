@@ -8,16 +8,57 @@ html {
 
 h1 {
     @include fontSize(128);
+
+    @media screen and (max-width: 1024px) {
+        @include fontSize(100);
+    }
+
+    @media screen and (max-width: 768px) {
+        @include fontSize(80);
+    }
+
+    @media screen and (max-width: 624px) {
+        @include fontSize(65);
+    }
+
+    @media screen and (max-width: 480px) {
+        @include fontSize(50);
+    }
+    
+    @media screen and (max-width: 320px) {
+        @include fontSize(40);
+    }
     
 }
 
 h2 {
     @include fontSize(40);
     font-weight: $fw-regular;
+
+    @media screen and (max-width: 1024px) {
+        @include fontSize(32);
+    }
+
+    @media screen and (max-width: 768px) {
+        @include fontSize(25);
+    }
+
+    @media screen and (max-width: 624px) {
+        @include fontSize(20);
+    }
+
+    @media screen and (max-width: 480px) {
+        @include fontSize(16);
+    }
+
 }
 
 h3 {
     @include fontSize(64);
+
+    @media screen and (max-width: 320px) {
+        @include fontSize(50);
+    }
 }
 
 h4 {
@@ -27,9 +68,21 @@ h4 {
 p {
     @include fontSize(24);
     font-weight: $fw-regular;
+
+    @media screen and (max-width: 768px) {
+        @include fontSize(20);
+    }
+
+    @media screen and (max-width: 480px) {
+        @include fontSize(16);
+    }
 }
 
 a {
     @include fontSize(24);
+
+    @media screen and (max-width: 480px) {
+        @include fontSize(20);
+    }
 }
 

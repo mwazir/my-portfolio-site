@@ -27,19 +27,50 @@
                         <li><a href="#contacts-section">Contact</a></li>
                     </ul>
                 </div> <!--.list-container END -->
-            </div> <!--.nav-container wrapper END -->
+                <div class="mobile-nav-container">
+                    <input type="checkbox" id="opens-sidebar-menu">
+                    <label for="opens-sidebar-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <div class="slideout-nav">
+                        <div class="toggle-btn-container" id="toggle-btn">
+                            <button class="toggle-btn">
+                                <i class="fa-solid fa-bars"></i>
+                            </button> 
+                        </div> <!--.toggle-btn-container END -->
+                        <nav>
+                            <ul>
+                                <li><a href="#home-section">Home</a></li>
+                                <li><a href="#about-section">About</a></li>
+                                <li><a href="#skills-section">Skills</a></li>
+                                <li><a href="#projects-section">Projects</a></li>
+                                <li><a href="#contacts-section">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div> <!--.slideout-nav-container END -->
+                </div> <!--.mobile-nav-container END -->
+            </div> <!--.nav-container wrapper END --> 
         </nav>
-        <header>
+        <header id="home-section">
             <div class="header-container">
-                <h1><span class="h1-brackets">&lt</span>Muhammad<span class="h1-brackets">&gt</span></h1>
-                <h2><span>{</span> Front-end Web Developer <span>}</span></h2>
+                <div class="primary-typing-container">
+                    <h1>
+                        <span class="h1-bracket-beg"></span><span class="h1-text"></span><span class="h1-bracket-end"></span>
+                    </h1>
+                    <span class="h1-input-cursor"></span>
+                </div>
+                <div class="secondary-typing-container">
+                    <h2></h2>
+                    <span class="h2-input-cursor"></span>
+                </div>
+                
             </div>
         </header>
         <main>
             <section class="about-section" id="about-section">
                 <div class="section-container wrapper">
                     <div class="img-container">
-                        <img src="https://via.placeholder.com/450x750" alt="">
+                        <img src="./assets/images/Capture6.PNG" alt="">
                     </div>
                     <div class="txt-container">
                         <h3>About Me</h3>
@@ -64,7 +95,7 @@
                             adventure
                             trip with my friends!
                         </p>
-                    </div>
+                    </div> <!--.txt-container END -->
                 </div> <!--.section-container wrapper END -->
             </section>
             <section class="skills-section" id="skills-section">
@@ -124,25 +155,22 @@
             </section>
             <section class="projects-section" id="projects-section">
                 <div class="projects-container wrapper">
+                    <h3>Projects</h3>
                     <div class="project-one-container">
                         <div class="img-container">
                             <img src="./assets/images/under-the-sea-screenshot.PNG" alt="">
                         </div> <!--.img-container END -->
                         <div class="info-container">
                             <h4>Under the Sea</h4>
-                            <p>A design conversion of a designer-provided PSD into a multi-pae responsive & accessible website. Project highlights the use of SASS.</p>
+                            <p>A design conversion of a designer-provided PSD into a multi-page responsive & accessible website. Project highlights the use of SASS.</p>
                             <div class="icons-container">
-                                <div class="icon"></div>
-                                <div class="icon"></div>
-                                <div class="icon"></div>
+                                <div class="icon"><i class="fa-brands fa-html5"></i></div>
+                                <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                                <div class="icon"><img src="./assets/icons/sass-icon.svg" alt="Sass logo"></div>
                             </div> <!--.icons-container END -->
                             <div class="links-container">
-                                <div class="link-container">
-                                    <a href="#">Live Link</a>
-                                </div> <!--.link-container END -->
-                                <div class="link-container">
-                                    <a href="#">GitHub</a>
-                                </div> <!--.link-container END -->
+                                <a href="https://under-the-sea-site.netlify.app/index.html" target="_blank">Live Link</a>
+                                <a href="https://github.com/mwazir/muhammad-wazir-project01" target="_blank">GitHub</a>
                             </div> <!--.links-container END -->
                         </div> <!--.info-container END -->
                     </div> <!--.project-one-container END -->
@@ -151,24 +179,21 @@
                             <h4>HN Sentiment Analyzer</h4>
                             <p>An application that leverages user comments to provide sentiment analysis for hacker news articles. Uses a Hacker News API combined with a sentiment analysis API.</p>
                             <div class="icons-container">
-                                <div class="icon"></div>
-                                <div class="icon"></div>
-                                <div class="icon"></div>
-                                <div class="ico"></div>
-                                <div class="icon"></div>
+                                <div class="icon"><i class="fa-brands fa-html5"></i></div>
+                                <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                                <div class="icon"><img src="./assets/icons/sass-icon.svg" alt="Sass logo"></div>
+                                <div class="icon"><i class="fa-brands fa-figma"></i></div>
+                                <div class="icon"><img src="./assets/icons/api-icon.png" alt="REST API icon logo"></div>
                             </div> <!--.icons-container END -->
                             <div class="links-container">
-                                <div class="link-container">
-                                    <a href="#">Live Link</a>
-                                </div> <!--.links-container END -->
-                                <div class="link-container">
-                                    <a href="#">GitHub</a>
-                                </div> <!--.link-container END -->
+                                <a href="https://hacker-news-sentiment-analyzer.netlify.app/" target="_blank">Live Link</a>
+                                <a href="https://github.com/ProjectOrg-MuhammadWazir-GabrielWright/sentiment-analyzer-project-2" target="_blank">GitHub</a>
                             </div> <!--.links-container END -->
-                            <div class="img-container">
-                                <img src="./assets/images/hacker-news-sentiment-analyzer-screenshot.PNG" alt="">
-                            </div> <!--.img-container END -->
                         </div> <!--.info-container END -->
+                        <div class="img-container">
+                            <img src="./assets/images/hacker-news-sentiment-analyzer-screenshot.PNG" alt="">
+                        </div>
+                        <!--.img-container END -->
                     </div> <!--.project-two-container END -->
                 </div> <!--.projects-container wrapper END -->
             </section>
@@ -176,34 +201,41 @@
                 <div class="contact-container wrapper">
                     <h3>Contact</h3>
                     <div class="img-container">
-                        <img src="" alt="">
+                        <img src="./assets/images/Capture4.PNG" alt="">
                     </div> <!--.img-container END -->
                     <p>Say Hello!</p>
                     <div class="icons-container">
                         <div class="icon-container">
-                            <i></i>
+                            <a href="mailto:mwazir6@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                         </div> <!--.icon-container END -->
                         <div class="icon-container">
-                            <i></i>
+                            <a href="https://github.com/mwazir" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div> <!--.icon-container END -->
                         <div class="icon-container">
-                            <i></i>
+                            <a href="https://www.linkedin.com/in/mwazir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </div> <!--.icon-container END -->
                     </div> <!--.icons-container END -->
-                    <form action="">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email Address">
-                        <label for="message">Message</label>
-                        <input type="textarea" name="message" id="message" placeholder="Message">
+                    <form action="https://formspree.io/f/xknypjnj" method="POST">
+                        <div class="name-and-email-container">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="message-container">
+                            <label for="message" class="sr-only">Message</label>
+                            <input type="textarea" name="message" id="message" rows="10" cols= "50" placeholder="Message">
+                        </div>
                         <button>Send Message</button>
                     </form>
                 </div> <!--.contact-container wrapper END -->
             </section>
         </main>
         <footer>
-            
+            <div class="footer-container">
+                <p> &copy; 2022 | Designed & Built by Muhammad Wazir</p>
+            </div>
         </footer>
+        <script src="./script.js"></script>
     </body>
 </html>

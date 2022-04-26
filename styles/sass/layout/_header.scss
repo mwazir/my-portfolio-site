@@ -1,7 +1,7 @@
 /* Header Partial */
 
 header {
-    height: calc(100vh - 81.4px);
+    min-height: calc(100vh - 81.4px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,55 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
-.h1-brackets {
+.primary-typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondary-typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-input-cursor {
+    display: inline-block;
+    width: 4px;
+    height: 130px;
+    background-color: $clr-white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+.h2-input-cursor {
+    display: none;
+    width: 2px;
+    height: 50px;
+    background-color: $clr-white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.h1-bracket-beg, .h1-bracket-end {
     color: $clr-blue;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
