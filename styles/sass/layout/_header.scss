@@ -19,12 +19,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 150px;
 }
 
 .secondary-typing-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
 }
 
 .h1-input-cursor {
@@ -34,6 +36,19 @@ header {
     background-color: $clr-white;
     margin-left: 8px;
     animation: blink .6s linear infinite alternate;
+
+    @media screen and (max-width: 1024px) {
+        height: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 80px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 60px;
+    }
+    
 }
 
 .h2-input-cursor {
@@ -43,6 +58,18 @@ header {
     background-color: $clr-white;
     margin-left: 8px;
     animation: blink .6s linear infinite alternate;
+
+    @media screen and (max-width: 1024px) {
+        height: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 24px;
+    }
 }
 
 @keyframes blink {
