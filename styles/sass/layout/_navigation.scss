@@ -1,0 +1,161 @@
+/* Navigation Partial */
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: $clr-darkgrey;
+}
+
+.logo {
+    display: flex;
+
+    a {
+        @include fontSize(36);
+        font-weight: $fw-extralight;
+        color: $clr-blue;
+
+        &:hover,
+        &:focus {
+            color: $clr-white;
+        }
+    }
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        margin: 0 0 0 3rem;
+    }
+
+    a {
+        @include fontSize(20);
+        cursor: pointer;
+        
+        &:hover,
+        &:focus {
+            color: $clr-blue;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-nav-container {
+    display: none;
+    
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+
+    &:checked~.slideout-nav {
+        right: 0;
+        transition: 0.5s;
+    }
+
+    &:focus+label {
+        border: 1px dotted primary;
+    }
+}
+
+//label for slideout nav hamburger icon styling
+label {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 15px;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+i {
+    @include fontSize(35);
+    color: $clr-blue;
+
+    &:hover {
+        color: $clr-white;
+    }
+}
+
+// slideout nav styling
+.slideout-nav {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    right: -250px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: $clr-blue;
+    color: $clr-darkgrey;
+
+    .toggle-btn-container {
+        display: flex;
+        justify-content: flex-start;
+        margin: 1rem 0 2rem 0;
+
+        button {
+            @include fontSize(35);
+            margin-left: 1rem;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            color: $clr-darkgrey;
+            cursor: pointer;
+
+        }
+
+        i {
+            @include fontSize(35);
+            color: $clr-darkgrey;
+
+            &:hover,
+            &:focus {
+                color: $clr-white;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li,
+    a {
+        @include fontSize(20);
+        margin: 1rem;
+        font-weight: $fw-bold;
+        color: $clr-darkgrey;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: $clr-white;
+        }
+    }
+}
