@@ -423,6 +423,21 @@ header {
           align-items: center;
   height: 150px;
 }
+@media screen and (max-width: 1024px) {
+  .primary-typing-container {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .primary-typing-container {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .primary-typing-container {
+    height: 40px;
+  }
+}
 
 .secondary-typing-container {
   display: -webkit-box;
@@ -435,6 +450,21 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
+}
+@media screen and (max-width: 768px) {
+  .secondary-typing-container {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .secondary-typing-container {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .secondary-typing-container {
+    height: 40px;
+  }
 }
 
 .h1-input-cursor {
@@ -942,7 +972,7 @@ i:hover {
 }
 .projects-container .info-container p {
   line-height: 1.5rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 @media screen and (max-width: 768px) {
   .projects-container .info-container p {
@@ -950,7 +980,7 @@ i:hover {
   }
 }
 .projects-container .info-container .icons-container {
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1058,7 @@ i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .project-one-container .info-container {
   margin-left: 2rem;
@@ -1054,6 +1084,7 @@ i:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 4rem;
 }
 .project-two-container .info-container {
   margin-right: 2rem;
@@ -1182,8 +1213,8 @@ form {
   width: 48%;
   height: 40px;
   border: none;
-  background: rgb(106, 193, 255);
-  color: rgb(30, 30, 30);
+  background: rgb(255, 255, 255);
+  color: black;
   padding: 0 0 0 0.5rem;
 }
 .name-and-email-container input::-webkit-input-placeholder {
@@ -1229,8 +1260,8 @@ form {
   width: 100%;
   height: 260px;
   border: none;
-  background: rgb(106, 193, 255);
-  color: rgb(30, 30, 30);
+  background: rgb(255, 255, 255);
+  color: black;
   padding: 0 0 10rem 0.5rem;
 }
 .message-container input::-webkit-input-placeholder {

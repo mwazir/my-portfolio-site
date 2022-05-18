@@ -44,7 +44,7 @@
         p {
             //@include fontSize(20);
             line-height: 1.5rem;
-            margin: 1rem 0 1rem 0;
+            margin: 1rem 0 2rem 0;
 
             @media screen and (max-width: 768px) {
                 text-align: center;
@@ -52,7 +52,7 @@
         }
 
         .icons-container {
-            margin: 1rem 0 1rem 0;
+            margin: 1rem 0 2rem 0;
             display: flex;
             
             i {
@@ -129,7 +129,7 @@
 
 .project-one-container {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     .info-container {
         margin-left: 2rem;
@@ -147,6 +147,7 @@
 
 .project-two-container {
     display: flex;
+    margin-bottom: 4rem;
 
     .info-container {
         margin-right: 2rem;
