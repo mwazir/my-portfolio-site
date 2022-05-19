@@ -52,14 +52,22 @@
             }
 
             a {
-    
+                
                 &:hover,
                 &:focus {
                     color: $clr-blue;
                     text-decoration: underline;
                     text-decoration-color: $clr-blue;
                 }
-            }
+
+                @media screen and (max-width: 768px) {
+                    @include fontSize(20);
+                }
+
+                @media screen and (max-width: 480px) {
+                    @include fontSize(16);
+                }
+}
         }
 
         .icons-container {

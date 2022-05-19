@@ -1040,6 +1040,16 @@ i:hover {
   -webkit-text-decoration-color: rgb(106, 193, 255);
           text-decoration-color: rgb(106, 193, 255);
 }
+@media screen and (max-width: 768px) {
+  .projects-container .info-container p a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects-container .info-container p a {
+    font-size: 0.8rem;
+  }
+}
 .projects-container .info-container .icons-container {
   margin: 1rem 0 2rem 0;
   display: -webkit-box;
