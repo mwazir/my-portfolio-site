@@ -384,6 +384,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header-container {
@@ -549,11 +550,59 @@ header {
   display: inline-block;
 }
 
+.down-arrow-container {
+  position: absolute;
+  bottom: 50px;
+  -webkit-animation: bounce 2s infinite ease-in-out alternate;
+          animation: bounce 2s infinite ease-in-out alternate;
+}
+.down-arrow-container i {
+  font-size: 4rem;
+}
+.down-arrow-container i:hover {
+  color: rgb(106, 193, 255);
+}
+@media screen and (max-width: 768px) {
+  .down-arrow-container i {
+    font-size: 3rem;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 /* Navigation Partial */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-container {
@@ -681,7 +730,7 @@ i:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 1rem 0 2rem 0;
-  z-index: 1;
+  z-index: 2;
 }
 .slideout-nav .toggle-btn-container button {
   font-size: 1.75rem;
@@ -739,6 +788,7 @@ i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  scroll-margin-top: 2.5rem;
 }
 
 .about-container {
@@ -974,7 +1024,7 @@ i:hover {
     line-height: 1.2rem;
   }
 }
-.projects-container .info-container p a:hover {
+.projects-container .info-container p a:hover, .projects-container .info-container p a:focus {
   color: rgb(106, 193, 255);
   text-decoration: underline;
   -webkit-text-decoration-color: rgb(106, 193, 255);
@@ -1184,7 +1234,7 @@ i:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.contact-container button:hover {
+.contact-container button:hover, .contact-container button:focus {
   background: rgb(106, 193, 255);
   color: rgb(30, 30, 30);
 }

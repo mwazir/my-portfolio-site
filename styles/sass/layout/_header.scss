@@ -5,6 +5,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .header-container {
@@ -12,6 +13,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -114,5 +116,30 @@ header {
 
 .show {
     display: inline-block;
+}
+
+.down-arrow-container {
+    position: absolute;
+    bottom: 50px;
+    animation: bounce 2s infinite ease-in-out alternate;
+
+    i {
+        @include fontSize(80);
+
+        &:hover {
+                color: $clr-blue;
+            }
+        
+
+        @media screen and (max-width: 768px) {
+            @include fontSize(60);
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
 }
 

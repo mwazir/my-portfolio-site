@@ -61,7 +61,8 @@
         color: $clr-white;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus, {
             background: $clr-blue;
             color: $clr-darkgrey;
         }

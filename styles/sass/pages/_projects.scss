@@ -53,7 +53,8 @@
 
             a {
     
-                &:hover {
+                &:hover,
+                &:focus {
                     color: $clr-blue;
                     text-decoration: underline;
                     text-decoration-color: $clr-blue;
