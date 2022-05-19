@@ -937,7 +937,7 @@ i:hover {
         flex-basis: 33%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .skills-icons-container .icon-container {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -950,7 +950,7 @@ i:hover {
 }
 @media screen and (max-width: 480px) {
   .skills-icons-container i {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .skills-icons-container p {

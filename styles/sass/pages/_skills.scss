@@ -38,7 +38,7 @@
             flex-basis: 33%;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 360px) {
             flex-basis: 50%;
         }
     }
@@ -49,7 +49,7 @@
         color: $clr-blue;
 
         @media screen and (max-width: 480px) {
-            @include fontSize(60);
+            @include fontSize(50);
         }
     }
 
