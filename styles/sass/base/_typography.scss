@@ -56,13 +56,25 @@ h2 {
 h3 {
     @include fontSize(64);
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 768px) {
+        @include fontSize(56);
+    }
+
+    @media screen and (max-width: 480px) {
         @include fontSize(50);
+    }
+
+    @media screen and (max-width: 320px) {
+        @include fontSize(44);
     }
 }
 
 h4 {
     @include fontSize(36);
+
+    @media screen and (max-width: 320px) {
+        @include fontSize(32);
+    }
 }
 
 p {
