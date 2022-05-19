@@ -78,6 +78,14 @@ form {
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 1200px) {
+            width: 60%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 80%;
+    }
+
     @media screen and (max-width: 768px) {
         width: 100%;
     }
@@ -87,6 +95,10 @@ form {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media screen and (max-width: 620px) {
+        flex-direction: column;
+    }
 
     input {
         width: 48%;
@@ -101,7 +113,7 @@ form {
             vertical-align: top;
         }
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 620px) {
             width: 100%;
             margin-top: 1rem;
         }
