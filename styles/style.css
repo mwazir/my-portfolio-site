@@ -567,6 +567,16 @@ header {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .down-arrow-container i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .down-arrow-container {
+    bottom: 100px;
+  }
+}
 
 @-webkit-keyframes bounce {
   0% {

@@ -134,6 +134,14 @@ header {
         @media screen and (max-width: 768px) {
             @include fontSize(60);
         }
+
+        @media screen and (max-width: 480px) {
+            @include fontSize(40);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        bottom: 100px;
     }
 }
 
