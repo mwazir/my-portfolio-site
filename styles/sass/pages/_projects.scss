@@ -112,8 +112,7 @@
                 border: 1px solid $clr-blue;
                 margin: 0 1rem 0 0;
         
-                &:hover,
-                &:focus {
+                &:hover {
                     background-color: $clr-blue;
                     color: $clr-darkgrey;
                 }

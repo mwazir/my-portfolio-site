@@ -1034,7 +1034,7 @@ i:hover {
   border: 1px solid rgb(106, 193, 255);
   margin: 0 1rem 0 0;
 }
-.projects-container .info-container .links-container a:hover, .projects-container .info-container .links-container a:focus {
+.projects-container .info-container .links-container a:hover {
   background-color: rgb(106, 193, 255);
   color: rgb(30, 30, 30);
 }
@@ -1172,6 +1172,9 @@ i:hover {
   font-size: 2rem;
   color: rgb(106, 193, 255);
 }
+.contact-container i:hover {
+  color: rgb(255, 255, 255);
+}
 .contact-container button {
   width: 200px;
   margin: 1.5rem 0 1.5rem 0;
@@ -1181,7 +1184,7 @@ i:hover {
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.contact-container button:hover, .contact-container button:focus {
+.contact-container button:hover {
   background: rgb(106, 193, 255);
   color: rgb(30, 30, 30);
 }

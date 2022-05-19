@@ -46,6 +46,10 @@
     i {
         @include fontSize(40);
         color: $clr-blue;
+
+        &:hover {
+                color: $clr-white;
+            }
     }
 
     button {
@@ -57,8 +61,7 @@
         color: $clr-white;
         cursor: pointer;
 
-        &:hover,
-        &:focus {
+        &:hover {
             background: $clr-blue;
             color: $clr-darkgrey;
         }
