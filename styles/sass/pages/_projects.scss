@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-margin-top: 1rem;
+    scroll-margin-top: 2.5rem;
 
     h3 {
         margin: 2rem 0 2rem 0;
@@ -14,6 +14,7 @@
             text-align: center;
         }
     }
+
 }
 
 .projects-container {
@@ -42,12 +43,21 @@
         }
 
         p {
-            //@include fontSize(20);
             line-height: 1.5rem;
             margin: 1rem 0 2rem 0;
 
             @media screen and (max-width: 768px) {
                 text-align: center;
+                line-height: 1.2rem;
+            }
+
+            a {
+    
+                &:hover {
+                    color: $clr-blue;
+                    text-decoration: underline;
+                    text-decoration-color: $clr-blue;
+                }
             }
         }
 
@@ -76,7 +86,11 @@
             }
 
             .icon {
-                margin: 0 1rem 0 0;
+                margin: 0 0.5rem 0 0.5rem;
+
+                @media screen and (max-width: 768px) {
+                    margin: 0 0.3rem 0 0.3rem;
+                }
             }
 
             @media screen and (max-width: 768px) {
@@ -127,9 +141,9 @@
     
 }
 
-.project-one-container {
+.project-right-container {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     .info-container {
         margin-left: 2rem;
@@ -142,12 +156,13 @@
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2rem;
     }
 }
 
-.project-two-container {
+.project-left-container {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     .info-container {
         margin-right: 2rem;
@@ -160,6 +175,7 @@
     @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         align-items: center;
+        margin-bottom: 2rem;
     }
     
 }

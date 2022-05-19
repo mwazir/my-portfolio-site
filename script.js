@@ -8,7 +8,7 @@ const h1inputCursorElem = document.querySelector('.h1-input-cursor');
 const h2inputCursorElem = document.querySelector('.h2-input-cursor');
 const h2Elem = document.querySelector('h2');
 
-app.typeH2Sentence = async (sentence, delay = 60) => {
+app.typeH2Sentence = async (sentence, delay = 40) => {
     const letters = sentence.split("");
     let i = 0;
     h2inputCursorElem.classList.add('show');
@@ -21,7 +21,7 @@ app.typeH2Sentence = async (sentence, delay = 60) => {
     return;
 }
 
-app.typeH1Sentence = async (sentence, delay = 120) => {
+app.typeH1Sentence = async (sentence, delay = 100) => {
     const letters = sentence.split("");
     let i = 0;
     while (i < letters.length) {

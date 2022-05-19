@@ -208,15 +208,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -383,7 +374,7 @@ button {
 
 /* Header Partial */
 header {
-  min-height: calc(100vh - 81.4px);
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,8 +551,9 @@ header {
 
 /* Navigation Partial */
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 .nav-container {
@@ -689,6 +681,7 @@ i:hover {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 1rem 0 2rem 0;
+  z-index: 1;
 }
 .slideout-nav .toggle-btn-container button {
   font-size: 1.75rem;
@@ -717,11 +710,12 @@ i:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 4rem;
 }
 .slideout-nav li,
 .slideout-nav a {
   font-size: 1rem;
-  margin: 1rem;
+  margin: 1rem 1rem 1rem 0.5rem;
   font-weight: 700;
   color: rgb(30, 30, 30);
   cursor: pointer;
@@ -931,7 +925,7 @@ i:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 2.5rem;
 }
 .projects-section h3 {
   margin: 2rem 0 2rem 0;
@@ -977,7 +971,14 @@ i:hover {
 @media screen and (max-width: 768px) {
   .projects-container .info-container p {
     text-align: center;
+    line-height: 1.2rem;
   }
+}
+.projects-container .info-container p a:hover {
+  color: rgb(106, 193, 255);
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgb(106, 193, 255);
+          text-decoration-color: rgb(106, 193, 255);
 }
 .projects-container .info-container .icons-container {
   margin: 1rem 0 2rem 0;
@@ -1005,7 +1006,12 @@ i:hover {
   }
 }
 .projects-container .info-container .icons-container .icon {
-  margin: 0 1rem 0 0;
+  margin: 0 0.5rem 0 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .projects-container .info-container .icons-container .icon {
+    margin: 0 0.3rem 0 0.3rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .projects-container .info-container .icons-container {
@@ -1054,22 +1060,22 @@ i:hover {
   }
 }
 
-.project-one-container {
+.project-right-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
-.project-one-container .info-container {
+.project-right-container .info-container {
   margin-left: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .project-one-container .info-container {
+  .project-right-container .info-container {
     margin: 1rem 0 0 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .project-one-container {
+  .project-right-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1077,25 +1083,26 @@ i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 2rem;
   }
 }
 
-.project-two-container {
+.project-left-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
-.project-two-container .info-container {
+.project-left-container .info-container {
   margin-right: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .project-two-container .info-container {
+  .project-left-container .info-container {
     margin: 1rem 0 0 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .project-two-container {
+  .project-left-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -1103,6 +1110,7 @@ i:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 2rem;
   }
 }
 
